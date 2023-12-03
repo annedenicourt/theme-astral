@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.blue_dark {
+  color: #1c2649;
+}
+
+.bg_blue_dark {
+  background-color: #1c2649;
+}
+.border_blue_dark {
+  border-color: #1c2649;
+}
