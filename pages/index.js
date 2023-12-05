@@ -1,15 +1,17 @@
 import { styled } from "styled-components";
-import NavBar from "../components/navbar";
+import MenuNavBar from "../components/MenuNavBar";
+import Banner from "../components/Banner";
+import Presentation from "../components/Presentation";
 
 const CustomDiv = styled.div`
-  color: red;
-  font-family: "Anton", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 `;
 export default function Page() {
   return (
     <CustomDiv>
-      <NavBar />
-      <h1>Hello, Next.js!</h1>
+      <MenuNavBar />
+      <Banner />
+      <Presentation />
     </CustomDiv>
   );
 }
