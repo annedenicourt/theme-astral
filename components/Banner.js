@@ -34,9 +34,10 @@ export default function Banner() {
       <div className="w-2/3">
         <div className="flex items-center justify-around">
           <div className="w-52 h-52 flex flex-col items-center justify-center blue_dark bg_transparent rounded-full">
-            <div className="title text-xl">pour mieux</div>
-            <div className="title text-xl">comprendre</div>
+            <div className="title text-xl">pour</div>
+            <div className="title text-xl">mieux comprendre</div>
             <div className="mt-2 text-center">mon mode de fonctionnement</div>
+            <div className="text-center">et celui des autres</div>
           </div>
           <div className="w-52 h-52 flex flex-col items-center justify-center blue_dark bg_transparent rounded-full">
             <div className="title text-xl">pour</div>

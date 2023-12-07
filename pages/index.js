@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { styled } from "styled-components";
 import MyNavBar from "../components/MyNavBar";
 import Banner from "../components/Banner";
@@ -19,15 +20,25 @@ const CustomDiv = styled.div`
 `;
 export default function Page() {
   return (
-    <CustomDiv>
-      <MyNavBar />
-      <Banner />
-      <Presentation />
-      <div className="section_break"></div>
-      <Programme />
-      <Tarifs />
-      <Contact />
-      <MyFooter />
-    </CustomDiv>
+    <>
+      <Head>
+        <title>Anne D. Développeur Web</title>
+        <meta
+          name="description"
+          content="Portfolio Anne Denicourt développeur web"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <CustomDiv>
+        <MyNavBar />
+        <Banner />
+        <Presentation />
+        <div className="section_break"></div>
+        <Programme />
+        <Tarifs />
+        <Contact />
+        <MyFooter />
+      </CustomDiv>
+    </>
   );
 }
