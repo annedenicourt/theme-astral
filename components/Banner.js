@@ -2,15 +2,15 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { styled } from "styled-components";
 
-const CustomDiv = styled.div`
+const BannerDiv = styled.div`
   font-family: "Montserrat Alternates", sans-serif;
   color: #fff;
   background-image: url("/images/fond_ciel.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  //font-size: 18px;
-  height: 356px;
+  background-size: 100vw;
+  background-position: top;
+  background-attachment: fixed;
+  height: 390px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,7 +26,7 @@ export default function Banner() {
   const router = useRouter();
 
   return (
-    <CustomDiv>
+    <BannerDiv>
       <div className="w-1/3 h-full flex flex-col items-center justify-center">
         <div className="mb-2 text-3xl">J&apos;apprends à faire un</div>
         <div className="title text-6xl">thème astral</div>
@@ -55,6 +55,6 @@ export default function Banner() {
           </div>
         </div>
       </div>
-    </CustomDiv>
+    </BannerDiv>
   );
 }

@@ -10,8 +10,8 @@ export const presentation = [
     subtitle3: "Particuliers/thérapeutes/coach",
     paragraph3:
       "Nos élèves en astrologie sont aussi bien des particuliers désirant élargir leurs connaissances que des thérapeutes ou des coachs souhaitant se former à un nouvel outil de travail.",
-    buttonText: "Le programme",
-    buttonClassName: "bg_blue_dark text-white uppercase",
+    buttonText: "LE PROGRAMME",
+    buttonHref: "/#programme",
   },
   {
     title: "Les + de notre formation",
@@ -23,8 +23,9 @@ export const presentation = [
       "Ces modules sont particulièrement intéressants pour le développement personnel et comprendre ce qui nous freine dans notre fonctionnement au quotidien. ",
     subtitle3: "",
     paragraph3: "",
-    buttonText: "Je m'inscris",
-    buttonClassName: "bg-white blue_dark uppercase",
+    buttonText: "JE M'INSCRIS",
+    buttonHref:
+      "https://www.formation-astrologie-elearning.fr/courses/interpretation/?tab=tab-overview",
   },
   {
     title: "Pourquoi choisir notre formation astrologie",
@@ -36,7 +37,7 @@ export const presentation = [
       "Des quiz permettent de valider vos acquis et des cours téléchargeables vous offrent la possibilité d’étudier tranquillement à la maison. ",
     subtitle3: "Un prix attractif",
     paragraph3: "blablablabla sur le tarif",
-    buttonText: "Les tarifs",
-    buttonClassName: "bg_blue_dark text-white uppercase",
+    buttonText: "LES TARIFS",
+    buttonHref: "/#tarifs",
   },
 ];
