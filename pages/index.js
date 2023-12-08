@@ -20,13 +20,10 @@ const CustomDiv = styled.div`
 `;
 export default function Page() {
   return (
-    <>
+    <div>
       <Head>
-        <title>Anne D. Développeur Web</title>
-        <meta
-          name="description"
-          content="Portfolio Anne Denicourt développeur web"
-        />
+        <title>Thème astral</title>
+        <meta name="description" content="Apprendre à faire un thème astral" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <CustomDiv>
@@ -39,6 +36,6 @@ export default function Page() {
         <Contact />
         <MyFooter />
       </CustomDiv>
-    </>
+    </div>
   );
 }

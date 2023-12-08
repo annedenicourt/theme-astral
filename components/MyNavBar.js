@@ -16,8 +16,8 @@ export default function MyNavBar() {
 
   return (
     <NavBarDiv>
-      <nav className="px-4 py-3 flex align-items justify-between blue_dark">
-        <div>THÈME ASTRAL</div>
+      <nav className="px-4 py-3 flex align-items justify-end md:justify-between text-sm md:text-base blue_dark">
+        <div className="hidden md:block">THÈME ASTRAL</div>
         <div className="" id="navbarNav">
           <div className="flex justify-end items-center">
             <div className="">

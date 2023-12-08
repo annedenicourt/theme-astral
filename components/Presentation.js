@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { styled } from "styled-components";
 import { presentation } from "../data/presentation";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus, FaPlusCircle } from "react-icons/fa";
 
 const PresentationDiv = styled.div`
   font-family: "Montserrat Alternates", sans-serif;
@@ -38,7 +38,7 @@ export default function Presentation() {
     <PresentationDiv>
       <div className="container_bg blue_dark">
         <div className="flex flex-col items-center">
-          <div className="w-2/3 mt-6 text-center text-xl leading-9">
+          <div className="w-full md:w-2/3 mt-6 text-center text-base md:text-xl leading-6 md:leading-9">
             Le thème astral est un{" "}
             <span className="font-semibold">outil formidable</span> à utiliser{" "}
             <span className="font-semibold">pour soi</span> mais aussi pour{" "}
@@ -48,57 +48,85 @@ export default function Presentation() {
           </div>
           <div className="w-36 h-0.5 my-8 bg_blue_dark"></div>
         </div>
-        <div className="my-6 flex">
+        <div className="my-6 flex flex-col lg:flex-row">
           {presentation?.map((item, index) => {
             return (
-              <div key={index} className="w-1/3">
-                <div
-                  className={`h-full max-w-md px-5 flex flex-col items-center justify-between text-center ${
-                    index === 1 && "py-5 bg_blue_dark text-white rounded-lg"
-                  }`}
-                >
+              <div key={index} className="w-full lg:w-1/3">
+                {index === 1 ? (
                   <div
-                    className={`mt-3 mb-5 title ${
-                      index === 1 ? "text-2xl" : "text-lg"
-                    } uppercase`}
+                    className={`h-full max-w-md px-5 flex flex-col items-center justify-between text-center
+                      py-5 bg_blue_dark text-white rounded-lg`}
                   >
-                    {index === 1 ? (
+                    <div className={`mt-3 mb-5 title text-2xl uppercase`}>
                       <div className="flex items-center">
                         Les{" "}
                         <span className="mx-2">
-                          <FaPlus />
+                          <FaPlusCircle />
                         </span>
                         de notre formation
                       </div>
-                    ) : (
-                      item.title
-                    )}
-                  </div>
-                  <div className="mb-1 font-semibold">{item.subtitle1}</div>
-                  <div className="mb-3 text-sm">{item.paragraph1}</div>
-                  <div className="mb-1 font-semibold">{item.subtitle2}</div>
-                  <div className="mb-3 text-sm">{item.paragraph2}</div>
-                  <div className="mb-1 font-semibold">{item.subtitle3}</div>
-                  <div className="mb-3 text-sm">{item.paragraph3}</div>
-                  <Link
-                    href={item.buttonHref}
-                    target={index === 1 ? "_blank" : "_self"}
-                  >
-                    <div
-                      className={`title mt-8 ${
-                        index === 1 ? "blue_dark" : "text-white"
-                      } `}
-                    >
-                      <button
-                        className={`px-6 py-3 text-xl ${
-                          index === 1 ? "bg-white" : "bg_blue_dark"
-                        } rounded-md transform hover:scale-95 duration-75`}
-                      >
-                        {item.buttonText}
-                      </button>
                     </div>
-                  </Link>
-                </div>
+                    <div className="mb-1 font-semibold text-xl text-orange-400">
+                      {item.subtitle1}
+                    </div>
+                    <div className="mb-3 text-sm">
+                      Notre formation thème astral se démarque des autres
+                      formations présentes sur internet. En plus des modules
+                      consacrés à l’étude des signes, des maisons et des
+                      planètes, nous vous proposons{" "}
+                      <span className="text-orange-400">
+                        2 modules entièrement consacrés aux noeuds lunaires
+                        (karma et dharma) ainsi qu’à la Lune Noire
+                      </span>{" "}
+                      et aux 12 blessures/blocages qu’elle génère.
+                    </div>
+                    <div className="font-semibold text-xl text-orange-400">
+                      Blessures de Lune Noire
+                    </div>
+                    <div className="mb-1 font-semibold text-xl text-orange-400">
+                      et nœuds lunaires
+                    </div>
+                    <div className="mb-3 text-sm">
+                      Ces modules sont particulièrement intéressants pour le
+                      développement personnel et comprendre ce qui nous freine
+                      dans notre fonctionnement au quotidien.
+                    </div>
+                    <div className="mb-1 font-semibold">{item.subtitle3}</div>
+                    <div className="mb-3 text-sm">{item.paragraph3}</div>
+                    <Link href={item.buttonHref} target={"_blank"}>
+                      <div className={`title my-4 blue_dark`}>
+                        <button
+                          className={`px-6 py-3 text-xl bg-white rounded-md transform hover:scale-95 duration-75`}
+                        >
+                          {item.buttonText}
+                        </button>
+                      </div>
+                    </Link>
+                  </div>
+                ) : (
+                  <div
+                    className={`h-full max-w-md px-5 flex flex-col items-center justify-between text-center`}
+                  >
+                    <div className={`mt-3 mb-5 title text-lg uppercase`}>
+                      {item.title}
+                    </div>
+                    <div className="mb-1 font-semibold">{item.subtitle1}</div>
+                    <div className="mb-3 text-sm">{item.paragraph1}</div>
+                    <div className="mb-1 font-semibold">{item.subtitle2}</div>
+                    <div className="mb-3 text-sm">{item.paragraph2}</div>
+                    <div className="mb-1 font-semibold">{item.subtitle3}</div>
+                    <div className="mb-3 text-sm">{item.paragraph3}</div>
+                    <Link href={item.buttonHref}>
+                      <div className={`title my-4 text-white`}>
+                        <button
+                          className={`px-6 py-3 text-xl bg_blue_dark rounded-md transform hover:scale-95 duration-75`}
+                        >
+                          {item.buttonText}
+                        </button>
+                      </div>
+                    </Link>
+                  </div>
+                )}
               </div>
             );
           })}

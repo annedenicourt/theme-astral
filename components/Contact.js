@@ -65,12 +65,19 @@ export default function Programme() {
         <div className="title mb-6 text-4xl text-center uppercase">
           Nous contacter
         </div>
+
         <form
-          className="w-2/3 py-8 bg_blue_dark rounded-lg"
+          className="w-full md:w-2/3 px-2 md:px-0 py-8 bg_blue_dark rounded-lg"
           id="contact_form"
           onSubmit={sendEmail}
         >
-          <div className="w-96 mx-auto flex flex-col items-center">
+          <div className="w-full md:w-2/3 mx-auto mb-6 text-xs md:text-sm text-white text-center">
+            Pour tout renseignement supplémentaire sur la formation thème
+            astral, n&lsquo;hésitez pas à nous envoyer un message via ce
+            formulaire de contact. Nous vous répondrons dans les plus brefs
+            délais.
+          </div>
+          <div className="w-full md:w-96 mx-auto flex flex-col items-center">
             <label htmlFor="to_name"></label>
             <input
               className="hidden"

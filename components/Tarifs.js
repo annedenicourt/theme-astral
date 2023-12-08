@@ -59,13 +59,20 @@ export default function Tarifs() {
             <span className="text-3xl"> €</span>
           </div>
         </div>
-        <div className={`title mt-8 blue_dark`}>
-          <button
-            className={`px-8 py-4 text-2xl bg-white rounded-md transform hover:scale-95 duration-75`}
-          >
-            JE M&lsquo;INSCRIS
-          </button>
-        </div>
+        <Link
+          href={
+            "https://www.formation-astrologie-elearning.fr/courses/interpretation/?tab=tab-overview"
+          }
+          target={"_blank"}
+        >
+          <div className={`title mt-8 flex justify-center`}>
+            <button
+              className={`px-8 py-4 text-2xl bg-white rounded-md transform hover:scale-95 duration-75`}
+            >
+              JE M&lsquo;INSCRIS
+            </button>
+          </div>
+        </Link>
       </div>
     </TarifDiv>
   );

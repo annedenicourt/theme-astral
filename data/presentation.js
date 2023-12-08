@@ -17,12 +17,10 @@ export const presentation = [
     title: "Les + de notre formation",
     subtitle1: "Contenu unique",
     paragraph1:
-      "Notre formation thème astral se démarque des autres formations présentes sur internet. En plus des modules consacrés à l’étude des signes, des maisons et des planètes, nous vous proposons 2 modules entièrement consacrés aux noeuds lunaires (karma et dharma) ainsi qu’à la Lune Noire et aux 12 blessures/blocages qu’elle génère. ",
-    subtitle2: "Une vraie connaissance de soi",
+      "Notre formation thème astral se démarque des autres formations présentes sur internet. En plus des modules consacrés à l’étude des signes, des maisons et des planètes, nous vous proposons 2 modules entièrement consacrés aux noeuds lunaires (karma et dharma) ainsi qu’à la Lune Noire et aux 12 blessures/blocages qu’elle génère.",
+    subtitle2: "Blessures de Lune Noire et noeuds lunaires",
     paragraph2:
       "Ces modules sont particulièrement intéressants pour le développement personnel et comprendre ce qui nous freine dans notre fonctionnement au quotidien. ",
-    subtitle3: "",
-    paragraph3: "",
     buttonText: "JE M'INSCRIS",
     buttonHref:
       "https://www.formation-astrologie-elearning.fr/courses/interpretation/?tab=tab-overview",
@@ -36,7 +34,8 @@ export const presentation = [
     paragraph2:
       "Des quiz permettent de valider vos acquis et des cours téléchargeables vous offrent la possibilité d’étudier tranquillement à la maison. ",
     subtitle3: "Un prix attractif",
-    paragraph3: "blablablabla sur le tarif",
+    paragraph3:
+      "Le prix de notre formation thème astral a été étudié afin de permettre au plus grand nombre d'apprendre et d'acquérir les connaissances nécessaires à l'élaboration d'un thème astral",
     buttonText: "LES TARIFS",
     buttonHref: "/#tarifs",
   },
