@@ -117,10 +117,10 @@ export default function Programme() {
           </div>
           <div className="mt-8 flex justify-center">
             <button
-              className="title px-4 py-2 flex items-center text-xl bg-white rounded-md transform hover:scale-95 duration-75"
+              className="title px-4 py-2 flex items-center text-xl bg-white rounded-md shadow-lg transform hover:scale-95 duration-75"
               type="submit"
             >
-              <div className="mr-2">
+              <div className="mr-2 text-orange-400">
                 <FiSend />
               </div>
               ENVOYER

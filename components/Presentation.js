@@ -10,7 +10,7 @@ const PresentationDiv = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  //height: 356px;
+  background-attachment: fixed;
 
   .title {
     font-family: "Anton", sans-serif;
@@ -119,7 +119,7 @@ export default function Presentation() {
                     <Link href={item.buttonHref}>
                       <div className={`title my-4 text-white`}>
                         <button
-                          className={`px-6 py-3 text-xl bg_blue_dark rounded-md transform hover:scale-95 duration-75`}
+                          className={`px-6 py-3 text-xl bg_blue_dark rounded-md shadow-lg transform hover:scale-95 duration-75`}
                         >
                           {item.buttonText}
                         </button>

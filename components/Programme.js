@@ -12,6 +12,7 @@ const ProgramDiv = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   li {
     list-style: inside;
@@ -159,7 +160,7 @@ export default function Programme() {
           >
             <div className={`title mt-8 flex justify-center`}>
               <button
-                className={`px-6 py-3 bg_blue_dark text-white text-xl rounded-md uppercase transform hover:scale-95 duration-75`}
+                className={`px-6 py-3 bg_blue_dark text-white text-xl rounded-md uppercase shadow-lgtransform hover:scale-95 duration-75`}
               >
                 {programme.buttonText}
               </button>
