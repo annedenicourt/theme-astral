@@ -8,7 +8,7 @@ import { FaPlusCircle, FaMinusCircle } from "react-icons/fa";
 
 const ProgramDiv = styled.div`
   font-family: "Montserrat Alternates", sans-serif;
-  background-image: url("/images/fond_ciel_bis.jpg");
+  background-image: url("/images/fond-ciel-bis.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
