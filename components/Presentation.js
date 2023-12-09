@@ -6,7 +6,7 @@ import { FaPlus, FaPlusCircle } from "react-icons/fa";
 
 const PresentationDiv = styled.div`
   font-family: "Montserrat Alternates", sans-serif;
-  background-image: url("/images/fond-ciel-bis.jpg");
+  background-image: url("/images/fond-ciel-bis.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

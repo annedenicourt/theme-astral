@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 const BannerDiv = styled.div`
   font-family: "Montserrat Alternates", sans-serif;
   color: #fff;
-  background-image: url("/images/fond-ciel.jpg");
+  background-image: url("/images/fond-ciel.webp");
   background-size: 100vw;
   background-position: top;
   background-attachment: fixed;

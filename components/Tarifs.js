@@ -8,7 +8,7 @@ import { FaPlusCircle } from "react-icons/fa";
 const TarifDiv = styled.div`
   font-family: "Montserrat Alternates", sans-serif;
   color: #1c2649;
-  background-image: url("/images/fond-ciel-bis.jpg");
+  background-image: url("/images/fond-ciel-bis.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;

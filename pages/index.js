@@ -10,7 +10,7 @@ import MyFooter from "../components/MyFooter";
 const CustomDiv = styled.div`
   font-family: "Montserrat Alternates", sans-serif;
   .section_break {
-    background-image: url("/images/fond-ciel-bis.jpg");
+    background-image: url("/images/fond-ciel-bis.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
